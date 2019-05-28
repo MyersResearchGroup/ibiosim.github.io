@@ -1,1 +1,2 @@
-# ibiosim.github.io
+# SBOLDesigner Documentation
+SBOLDesigner documentation hosted on GitHub pages
