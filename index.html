@@ -89,7 +89,6 @@
                             </li>
                             <li><a href="#line8">Support Desk</a></li>
                             -->
-                            <li><a href="#line9">Other Useful Information</a></li>
                             <li><a href="#line10">Credits</a></li> 
                             <li><a href="#line11">Copyright and license</a></li>
                         </ul>
@@ -102,11 +101,7 @@
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Introduction<hr></h2>
                                 <div class="row">
-                                    <p>PUT SOMETHING HERE is a simple, biologist-friendly CAD software tool for creating and manipulating the sequences of genetic constructs using the <a href="http://www.sbolstandard.org/">Synthetic Biology Open Language</a>  (SBOL) 2.2 data model.  
-                                        Throughout the design process, SBOL Visual symbols, a system of schematic glyphs, provide standardized visualizations of individual parts.  SBOLDesigner completes a workflow for users of genetic design automation tools.  
-                                        It combines a simple user interface with the power of the SBOL standard and serves as a launchpad for more detailed designs involving simulations and experiments.  
-                                        Some features in SBOLDesigner are SynBioHub integration, local repositories, importing of parts/sequences from existing files, import and export of GenBank and FASTA files, 
-                                        extended role ontology support, the ability to partially open designs with multiple root ComponentDefinitions, backward compatibility with SBOL 1.1, and versioning.</p>
+                                    <p>iBioSim has been developed for the modeling, analysis, and design of genetic circuits. While iBioSim primarily targets models of genetic circuits, models representing metabolic networks, cell-signaling pathways, and other biological and chemical systems can also be analyzed. iBioSim also includes modeling and visualization support for multi-cellular and spatial models as well. It is capable of importing and exporting models specified using the Systems Biology Markup Language  (SBML).Finally, it is one of the first tools to also support the Synthetic Biology Open Language (SBOL), an emerging standard for information exchange in synthetic biology.</p>
                                     <div class="col-md-12 full">
                                         <div class="intro1">
                                             <ul>
@@ -146,12 +141,12 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <p>Before beginning to use SBOL Designer, go to your preferences and change your <strong>name</strong>, <strong>email</strong>, and <strong>URI</strong> to something unique.</p>
+                                <p>Before beginning to use IBIOSIM, go to your preferences and change your <strong>name</strong>, <strong>email</strong>, and <strong>URI</strong> to something unique.</p>
 
                                 <h4>Preferences Screen</h4>
 
                             <div class="container">
-                                <img src="images/SBOLpref.png">
+                                <img src="images/preference.PNG">
                             </div>
                             <!-- end col -->
                         </div>
@@ -170,20 +165,10 @@
 
                         <hr>
 
-                        <ul style="list-style-type: disc;">
-                            <li>Read/Write of SBOL 2.0</li>
-                            <li>Hierarchy</li>
-                            <li>Orientation</li>
-                            <li>Generic.user defined parts</li>
-                            <li>Multiple designs in a single SBOL file</li>
-                            <li>Importing Parts/Sequences from other SBOL files</li>
-                            <li>Registries (SynBioHub, built-in parts, working document, local repositories)</li>
-                            <li>Web of Registries integration</li>
-                            <li>Provenance</li>
-                            <li>Versioning</li>
-                            <li>Import/Export (GenBank, FASTA, SBOL 1.1, SBOL 2.0)</li>
-                            <li>Export of SBOL Visual 2 glyphs and overlays</li>
-                            <li>Combinatorial Design</li>
+                        <div class="row">
+                            <p> To create a new project, select New → Project from the File menu as shown below. You will then be prompted to browse to a desired location and to give a name to the project directory. After you do this, click the new button and a new project directory will be created. To open a project, select Open Project from the File menu. You will then be prompted to browse to a project directory to open, and clicking open will open the project. You may also open a project by selecting one of your ten most recently opened projects by selecting the project name shown in the Open Recent menu within the File menu.</p>
+                            
+                            //screenshot
 
 
 
@@ -191,7 +176,7 @@
 
                         <h4>Tutorial Video</h4>
 
-                        <p>If you are new to SBOLDesigner, watch this tutorial video. It will demonstrate how to construct a basic toggle switch.</p>
+                        <p>If you are new to IBIOSIM, watch this tutorial video. It will demonstrate how to Create Models and Graphs.</p>
                         <hr>
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
@@ -206,7 +191,7 @@
                                 <h4>Main Screen</h4>
                                 <div class="container">
                                     <img src="SBOLmain.png">
-                                    <p>This is the main screen of SBOLDesigner. The top bar comprises of functions such as saving and exporting, while the bottom bar holds parts available for use.</p>
+                                    <p>This is the main screen of IBIOSIM. The top bar comprises of functions such as saving and exporting, while the bottom bar holds parts available for use.</p>
                                 </div>
                             </div>
                     
@@ -232,7 +217,7 @@
                         <h4>Importing from an online registry</h4>
                             <div>
                                 <img src="SBOLreg.png">
-                                <p>Here, you can filter and choose parts from either a local or online repository.</p>
+                                <p>Here, you can filter and choose parts from either a local or online repository, such as synBioHub.</p>
                             </div>
 
 
@@ -325,7 +310,7 @@
                         <div class="row">
 
                             <div class="col-md-12">
-                                <p>Here is a tutorial video on how to create an example of a designs in IBIOSIM.</p>
+                                <p>Here is a tutorial video on how to create an example of a full design in IBIOSIM.</p>
                             </div>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/YfsUis2cV2A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
@@ -483,25 +468,10 @@
 
                      <section id="line9" class="section">
 
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Other Useful Information<a href="#top">#back to top</a><hr></h2>
-                            </div>
-                        </div>
+                       
+                                
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <hr>
-                                    These two videos show a synthetic biology workflow using SBOLDesigner embedded in iBioSim.
-
-                                    <iframe style="margin-top:30px; margin-bottom: 18px;" src="https://drive.google.com/file/d/0Bx-ltjk2UJOSZlJhTFVMU2ctTEk/preview" width="560" height="315"></iframe>
-                                    <br>
-                                    <iframe style="margin-top:30px; margin-bottom: 18px;" src="https://drive.google.com/file/d/0Bx-ltjk2UJOSeXRaTThYajdNV1k/preview" width="560" height="315"></iframe>
-
-                                    <p><a href="https://pubs.acs.org/doi/abs/10.1021/acssynbio.6b00275">This ACS Synthetic Biology Paper </a>goes over SBOLDesigner's backend and use of SBOL 2.</p>
-                                    <p><a href="https://drive.google.com/open?id=1Z3udIo8XfO25mOQvKzQhSjz2uYFm5tIV">This Bachleor's Thesis </a>goes over SBOLDesigner's backend, SBOL Visual, and combinatorial design implementation.</p>
-                            </div>
-                        </div>
+                       
 
                     </section>
                     <!-- end section -->
@@ -515,9 +485,7 @@
                         </div>
 
                         <div class="row">
-                                <p>This tool is currently being developed by Michael Zhang in the Myers research group at the University of Utah. 
-                                    SBOLDesigner started at the University of Washington in collaboration with Clark & Parsia by Michal Galdzicki, 
-                                    Bryan Bartley, Sean Sleight, Evren Sirin, and John Gennari. This website was developed by Eric Yu.
+                                <p>The iBioSim tool is being developed by Chris Myers research group at the University of Utah. This project has involved many students including Nathan Barker, Scott Glass, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen, Nam Nguyen, Tramy Nguyen, Tyler Patterson, Nicholas Roehner, Jason Stevens, Leandro Watanabe, and Zhen Zhang.
                                 </p>
                         </div>
 
@@ -536,7 +504,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 
-                                <p>SBOLDesigner is released under the <a href="https://github.com/SynBioDex/SBOLDesigner/blob/master/LICENSE.txt" target="_blank">Apache 2.0</a> License.</p>                        
+                                <p>IBIOSIM is released under the <a href="https://github.com/SynBioDex/SBOLDesigner/blob/master/LICENSE.txt" target="_blank">Apache 2.0</a> License.</p>                        
                                 <p>For more information about the Apache license go to <a href="http://www.apache.org/licenses/" target="_blank">apache.org/licenses/</a>.</p>
                             
                             </div>
