@@ -15,7 +15,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
 
-    <title>iBioSim| Documentation</title>
+    <title>iBioSim | Documentation</title>
 
     <link rel="shortcut icon" href="http://www.async.ece.utah.edu/wp-content/themes/umctheme/images/favicon.ico" type="image/x-icon">
 
@@ -97,7 +97,7 @@
                     </nav >
                 </div>
                 <div class="col-md-9">
-                    <section class="welcome">
+                    <section class="welcome" id="introduction">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -138,19 +138,102 @@
                         </div>
                     </section>
                     
-                    <section id="line1" class="section">
-
+                    <section id="line1" class="section installation">
+                    
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Installing iBioSim <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Installing iBioSim <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
                             </div>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
-                             <div class="row">
-                                 <div class="col-md-12">
-                             <p>For windows users:</p>
-                              <p>// instructions</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="pb0">Before installing iBioSim, please make sure that the following software is installed on your
+                                    system.</p>
+                                <ul class="ml4">
+                                    <li>
+                                        <a href="https://www.oracle.com/java/technologies/javase-downloads.html" class="link">
+                                            Java Runtime Environment
+                                        </a> (Version 1.7 or higher)
+                                    </li>
+                                    <li>
+                                        <a href="https://www.graphviz.org/" class="link">Graphviz</a> (optional)
+                                    </li>
+                                </ul>
+                                <p class="pb0">
+                                    To install, download the zip file for your operating system and unzip it where you want the application to reside. 
+                                </p>
+                                <ul class="ml4">
+                                    <li>
+                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-win64.zip" class="link">
+                                            iBioSim-win64.zip
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-linux64.zip" class="link">
+                                            iBioSim-linux64.zip
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-mac64.zip" class="link">
+                                            iBioSim-mac64.zip
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="pb0">
+                                    To run iBioSim, execute iBioSim in the top directory.
+                                </p>
+                                <div class="intro1">
+                                    <div class="row m0">
+                                        <p class="pb0 m0"><strong>For Windows users:</strong></p>
+                                        <p class="pb0 m0">If the application font appears very small, you need to follow the next steps:</p>
+                                        <ol class="pl2">
+                                            <li>
+                                                Go to where Java is installed (usually C:\Program Files\Java\jre\bin) and right click on the java.exe
+                                                file.
+                                                Select Properties, click the Compatibility tab, click on "Change high DPI settings", and select
+                                                "Override
+                                                high DPI scaling behavior." and finally select Scaling
+                                                performed by: System.
+                                            </li>
+                                            <li>
+                                                If the previous step didn't solve the problem, try repeating the last steps for all java*.exe files
+                                                (i.e:
+                                                java.exe,
+                                                javaw.exe javacl.exe, etc).
+                                            </li>
+                                            <li>
+                                                If the previous step didn't solve the problem, open a Command Prompt and type "where ava". This will
+                                                list if
+                                                you have
+                                                any other folders containing java.exe files. Find these other files, and follow the instructions in step
+                                                1)
+                                                of each of
+                                                them.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="row m0">
+                                        <p class="pb0 mb0"><strong>For Linux users:</strong></p>
+                                        <p class="pb0 m0">Dependencies are resolved at runtime when iBioSim is opened for the first time. <br> In order
+                                            to compile the dependencies, you need the following:</p>
+                                        <ul>
+                                            <li>bison</li>
+                                            <li>flex</li>
+                                            <li>swig</li>
+                                            <li>python2</li>
+                                            <li>libxml2-dev</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    
+                    </section>
 
                         <hr>
                     
@@ -253,7 +336,9 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Uploading to an Online Repository <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Uploading to an Online Repository <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
                             </div>
                            
                     
@@ -273,21 +358,15 @@
                         
                          <hr>
                         
-
-                    </section>
-                    <!-- end section -->
-
-                            
-
-                            <div class="col-md-12">
-                                <p>If you need additional help, you can watch this tutorial video on how to upload to SynBioHub.</p>
-                                <div class="text-center">
-                                        <div class="media">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Osbk5zNrJeA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>                                        </div>
+                    <div class="col-md-12">
+                        <p>If you need additional help, you can watch this tutorial video on how to upload to SynBioHub.</p>
+                        <div class="text-center">
+                                <div class="media">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Osbk5zNrJeA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                    </iframe>                                        
                                 </div>
-                            </div>
                         </div>
-                        <!-- end row -->
+                    </div>
 
                     </section>
                     <!-- end section -->
