@@ -1,3 +1,12 @@
+/* Global */
+.row {
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 10px 0;
+}
 /*Docs*/
 
 .body {
