@@ -17,7 +17,8 @@
 
     <title>iBioSim | Documentation</title>
 
-    <link rel="shortcut icon" href="https://www.async.ece.utah.edu/wp-content/themes/umctheme/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.async.ece.utah.edu/wp-content/themes/umctheme/images/favicon.ico"
+        type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/stroke.css">
@@ -55,7 +56,7 @@
                         </div>
                         <!-- end title -->
                     </div>
-                    <!-- end 12 -->
+                    <!-- end col -->
                 </div>
                 <!-- end row -->
 
@@ -67,16 +68,18 @@
             <div class="row">
 
                 <div class="col-md-3">
-                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200"
+                        role="navigation">
                         <ul class="nav">Contents
-                             <li><a href="#line1">Installing iBioSim</a></li>
-                            <li><a href="#line1">Getting Started</a></li>
-                            <li><a href="#line2">Creating a Project</a></li>
-                            <li><a href="#line3">Importing from Repositories</a></li>
-                            <li><a href="#line4">Uploading to an Online Repository</a></li>
-                            <li><a href="#line5">Exporting to Other File Formats</a></li>
-                             <li><a href="#line5">Importing from Other File Formats</a></li>
-                            <li><a href="#line6">Design example</a></li>
+                            <li><a href="#introduction">Introduction</a></li>
+                            <li><a href="#installation">Installing iBioSim</a></li>
+                            <li><a href="#getting-started">Getting Started</a></li>
+                            <li><a href="#creating-a-project">Creating a Project</a></li>
+                            <li><a href="#importing-from-repo">Importing from Repositories</a></li>
+                            <li><a href="#uploading-to-repo">Uploading to an Online Repository</a></li>
+                            <li><a href="#exporting-to-file">Exporting to Other File Formats</a></li>
+                            <li><a href="#importing-from-file">Importing from Other File Formats</a></li>
+                            <li><a href="#design-example">Design example</a></li>
                             <!-- 
                             <li><a href="#line7">How to Use Option Panel</a>
                                 <ul class="nav">
@@ -91,55 +94,80 @@
                             </li>
                             <li><a href="#line8">Support Desk</a></li>
                             -->
-                            <li><a href="#line10">Credits</a></li> 
-                            <li><a href="#line11">Copyright and license</a></li>
+                            <li><a href="#credits">Credits</a></li>
+                            <li><a href="#copyright">Copyright and license</a></li>
                         </ul>
-                    </nav >
+                    </nav>
                 </div>
                 <div class="col-md-9">
                     <section class="welcome" id="introduction">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Introduction<hr></h2>
+                                <h2 class="dark-text">Introduction
+                                    <hr>
+                                </h2>
                                 <div class="row">
-                                    <p>iBioSim has been developed for the modeling, analysis, and design of genetic circuits. While iBioSim primarily targets models of genetic circuits, models representing metabolic networks, cell-signaling pathways, and other biological and chemical systems can also be analyzed. iBioSim also includes modeling and visualization support for multi-cellular and spatial models as well. It is capable of importing and exporting models specified using the Systems Biology Markup Language  (SBML).Finally, it is one of the first tools to also support the Synthetic Biology Open Language (SBOL), an emerging standard for information exchange in synthetic biology.</p>
-                                    <p>IMPORTANT: this documentation is still under development.  Older documentation and tutorials are found here:
+                                    <p>iBioSim has been developed for the modeling, analysis, and design of genetic
+                                        circuits. While iBioSim primarily targets models of genetic circuits, models
+                                        representing metabolic networks, cell-signaling pathways, and other biological
+                                        and chemical systems can also be analyzed. iBioSim also includes modeling and
+                                        visualization support for multi-cellular and spatial models as well. It is
+                                        capable of importing and exporting models specified using the Systems Biology
+                                        Markup Language (SBML).Finally, it is one of the first tools to also support the
+                                        Synthetic Biology Open Language (SBOL), an emerging standard for information
+                                        exchange in synthetic biology.</p>
+                                    <p>IMPORTANT: this documentation is still under development. Older documentation and
+                                        tutorials are found here:</p>
                                     <ul>
-                                      <li><a href="docs/iBioSim.html">iBioSim 2.8 Manual</li>
-                                      <li><a href="docs/iBioSim_SysBio_Tutorial.html">iBioSim 2.8 Systems Biology Tutorial</li>
-                                      <li><a href="docs/iBioSim_SynBio_Tutorial.html">iBioSim 2.8 Synthetic Biology Tutorial</li>
+                                        <li><a href="docs/iBioSim.html">iBioSim 2.8 Manual</a></li>
+                                        <li><a href="docs/iBioSim_SysBio_Tutorial.html">iBioSim 2.8 Systems Biology
+                                                Tutorial</a></li>
+                                        <li><a href="docs/iBioSim_SynBio_Tutorial.html">iBioSim 2.8 Synthetic Biology
+                                                Tutorial</a></li>
                                     </ul>
-                                    </p>
-                                    <div class="col-md-12 full">
-                                        <div class="intro1">
-                                            <ul>
-                                                <li><strong>Version : </strong> v 3.0</li>
-                                                <li><strong>Created by the </strong> <a href="http://www.async.ece.utah.edu/SBOLDesigner" target="_blank">Myers Research Group</a></li>
-                                                <li><strong>GitHub Repository : </strong> <a href="https://github.com/MyersResearchGroup/iBioSim" target="_blank">https://github.com/SynBioDex/SBOLDesigner</a></li>
-                                                <li><strong>Issue Tracker : </strong><a href="https://github.com/MyersResearchGroup/iBioSim/issues" target="_blank">https://github.com/SynBioDex/SBOLDesigner/issues</a></li>
-                                                <li><strong>Download : </strong> <a href="https://github.com/SynBioDex/SBOLDesigner/releases/download/v3.0/SBOLDesigner-3.0.jar" target="_blank">JAR File</a></li>
-                                                <li><strong>Readme : </strong><a href="https://github.com/MyersResearchGroup/iBioSim/blob/master/README.md" target="_blank">README.md</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <hr>
+                                    <div class="intro1">
+                                        <ul>
+                                            <li><strong>Version : </strong> v 3.0</li>
+                                            <li><strong>Created by the </strong> <a
+                                                    href="http://www.async.ece.utah.edu/SBOLDesigner"
+                                                    target="_blank">Myers Research Group</a></li>
+                                            <li><strong>GitHub Repository : </strong> <a
+                                                    href="https://github.com/MyersResearchGroup/iBioSim"
+                                                    target="_blank">https://github.com/SynBioDex/SBOLDesigner</a>
+                                            </li>
+                                            <li><strong>Issue Tracker : </strong><a
+                                                    href="https://github.com/MyersResearchGroup/iBioSim/issues"
+                                                    target="_blank">https://github.com/SynBioDex/SBOLDesigner/issues</a>
+                                            </li>
+                                            <li><strong>Download : </strong> <a
+                                                    href="https://github.com/SynBioDex/SBOLDesigner/releases/download/v3.0/SBOLDesigner-3.0.jar"
+                                                    target="_blank">JAR File</a></li>
+                                            <li><strong>Readme : </strong><a
+                                                    href="https://github.com/MyersResearchGroup/iBioSim/blob/master/README.md"
+                                                    target="_blank">README.md</a></li>
+                                        </ul>
                                         <div>
-
-                                            <h4>Requirements</h4>
-                                            <p>You must have the Java JRE installed on your computer. If you do not, go <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html" target="_blank">here</a> to download the latest version for your operating system.</p>
-
+                                            <p><strong>To cite iBioSim, please use the latest paper:</strong></p>
+                                            <p>Watanabe, Leandro, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang,
+                                                Curtis Madsen, Nicholas Roehner, and Chris Myers. 2018.
+                                                <a href="https://pubs.acs.org/doi/full/10.1021/acssynbio.8b00078">
+                                                    "IBioSim 3: A Tool for Model-Based Genetic Circuit Design."
+                                                </a>
+                                                <i>ACS Synthetic Biology</i> 8
+                                                (7): 1560–1563. doi:10.1021/acssynbio.8b00078.</p>
                                         </div>
                                     </div>
-
                                 </div>
                                 <!-- end row -->
                             </div>
                         </div>
                     </section>
                     
-                    <section id="line1" class="section installation">
-                    
+                    <hr>
+
+                    <section id="installation" class="section installation">
+
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Installing iBioSim <a href="#top">#back to top</a>
@@ -151,11 +179,13 @@
                         <!-- end row -->
                         <div class="row">
                             <div class="col-md-12">
-                                <p class="pb0">Before installing iBioSim, please make sure that the following software is installed on your
+                                <p class="pb0">Before installing iBioSim, please make sure that the following software
+                                    is installed on your
                                     system.</p>
                                 <ul class="ml4">
                                     <li>
-                                        <a href="https://www.oracle.com/java/technologies/javase-downloads.html" class="link">
+                                        <a href="https://www.oracle.com/java/technologies/javase-downloads.html"
+                                            class="link">
                                             Java Runtime Environment
                                         </a> (Version 1.7 or higher)
                                     </li>
@@ -164,21 +194,25 @@
                                     </li>
                                 </ul>
                                 <p class="pb0">
-                                    To install, download the zip file for your operating system and unzip it where you want the application to reside. 
+                                    To install, download the zip file for your operating system and unzip it where you
+                                    want the application to reside.
                                 </p>
                                 <ul class="ml4">
                                     <li>
-                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-win64.zip" class="link">
+                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-win64.zip"
+                                            class="link">
                                             iBioSim-win64.zip
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-linux64.zip" class="link">
+                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-linux64.zip"
+                                            class="link">
                                             iBioSim-linux64.zip
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-mac64.zip" class="link">
+                                        <a href="https://github.com/MyersResearchGroup/iBioSim/releases/download/3.0.0/iBioSim-mac64.zip"
+                                            class="link">
                                             iBioSim-mac64.zip
                                         </a>
                                     </li>
@@ -189,27 +223,33 @@
                                 <div class="intro1">
                                     <div class="row m0">
                                         <p class="pb0 m0"><strong>For Windows users:</strong></p>
-                                        <p class="pb0 m0">If the application font appears very small, you need to follow the next steps:</p>
+                                        <p class="pb0 m0">If the application font appears very small, you need to follow
+                                            the next steps:</p>
                                         <ol class="pl2">
                                             <li>
-                                                Go to where Java is installed (usually C:\Program Files\Java\jre\bin) and right click on the java.exe
+                                                Go to where Java is installed (usually C:\Program Files\Java\jre\bin)
+                                                and right click on the java.exe
                                                 file.
-                                                Select Properties, click the Compatibility tab, click on "Change high DPI settings", and select
+                                                Select Properties, click the Compatibility tab, click on "Change high
+                                                DPI settings", and select
                                                 "Override
                                                 high DPI scaling behavior." and finally select Scaling
                                                 performed by: System.
                                             </li>
                                             <li>
-                                                If the previous step didn't solve the problem, try repeating the last steps for all java*.exe files
+                                                If the previous step didn't solve the problem, try repeating the last
+                                                steps for all java*.exe files
                                                 (i.e:
                                                 java.exe,
                                                 javaw.exe javacl.exe, etc).
                                             </li>
                                             <li>
-                                                If the previous step didn't solve the problem, open a Command Prompt and type "where ava". This will
+                                                If the previous step didn't solve the problem, open a Command Prompt and
+                                                type "where ava". This will
                                                 list if
                                                 you have
-                                                any other folders containing java.exe files. Find these other files, and follow the instructions in step
+                                                any other folders containing java.exe files. Find these other files, and
+                                                follow the instructions in step
                                                 1)
                                                 of each of
                                                 them.
@@ -218,9 +258,10 @@
                                     </div>
                                     <div class="row m0">
                                         <p class="pb0 mb0"><strong>For Linux users:</strong></p>
-                                        <p class="pb0 m0">Dependencies are resolved at runtime when iBioSim is opened for the first time. <br> In order
+                                        <p class="pb0 m0">Dependencies are resolved at runtime when iBioSim is opened
+                                            for the first time. <br> In order
                                             to compile the dependencies, you need the following:</p>
-                                        <ul>
+                                        <ul class="pl2">
                                             <li>bison</li>
                                             <li>flex</li>
                                             <li>swig</li>
@@ -229,19 +270,21 @@
                                         </ul>
                                     </div>
                                 </div>
-                               
+
                             </div>
                         </div>
-                    
+
                     </section>
 
-                        <hr>
-                    
-                    <section id="line1" class="section">
+                    <hr>
+
+                    <section id="getting-started" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Getting Started <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Getting Started <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
                             </div>
                             <!-- end col -->
                         </div>
@@ -249,20 +292,22 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <p>Before beginning to use iBioSim, go to your preferences and change your <strong>name</strong>, <strong>email</strong>, and <strong>URI</strong> to something unique.</p>
+                                <p>Before beginning to use iBioSim, go to your preferences and change your
+                                    <strong>name</strong>, <strong>email</strong>, and <strong>URI</strong> to something
+                                    unique.</p>
 
                                 <h4>Preferences Screen</h4>
 
-                            <div class="container">
-                                <img src="images/preference.PNG" width="500" height="400">
-                               
+                                <div class="text-center">
+                                    <img src="images/preference.PNG" width="500" height="400">
+                                </div>
                             </div>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
                     </section>
                     <!-- end section -->
-                    <section id="line2" class="section">
+                    <section id="creating-a-project" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -273,52 +318,66 @@
                         <!-- end row -->
 
                         <hr>
-                        
+
 
                         <div class="row">
-                            
-                            <p> To create a new project, select New → Project from the File menu as shown below. You will then be prompted to browse to a desired location and to give a name to the project directory. After you do this, click the new button and a new project directory will be created. To open a project, select Open Project from the File menu. You will then be prompted to browse to a project directory to open, and clicking open will open the project. You may also open a project by selecting one of your ten most recently opened projects by selecting the project name shown in the Open Recent menu within the File menu.</p>
-                            
-                            <img src= "images/creatproject.PNG" width="400" height="450">
-
-
-
-                        </ul>
-
-                      
-
-                            <div class="row">
+                            <div class="col-md-12">
+                                <p> To create a new project, select New → Project from the File menu as shown below. You
+                                    will then be prompted to browse to a desired location and to give a name to the
+                                    project
+                                    directory. After you do this, click the new button and a new project directory will
+                                    be
+                                    created. To open a project, select Open Project from the File menu. You will then be
+                                    prompted to browse to a project directory to open, and clicking open will open the
+                                    project. You may also open a project by selecting one of your ten most recently
+                                    opened
+                                    projects by selecting the project name shown in the Open Recent menu within the File
+                                    menu.</p>
+                                <div class="text-center">
+                                    <img src="images/creatproject.PNG" width="400" height="450">
+                                </div>
                                 <hr>
                                 <h4>Main Screen</h4>
-                                <div class="container">
+                                <div class="text-center">
                                     <img src="images/mainScreen.PNG" width="700" height="450">
-                                    <p>This is the main screen of iBioSim. The top bar comprises of functions such as saving and exporting, while the bottom bar holds parts available for use.</p>
                                 </div>
+                                <p>This is the main screen of iBioSim. The top bar comprises of functions such
+                                    as
+                                    saving and exporting, while the bottom bar holds parts available for use.
+                                </p>
                             </div>
-                    
+                        </div>
+
                     </section>
                     <!-- end section -->
 
-                    <section id="line3" class="section">
+                    <section id="importing-from-repo" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Importing from Repositories <a href="#top">#back to top</a><hr></h2>
-                            </div>
-                            
-                             <p>To import a registry part from an online repository, double click on a part to view its details, click on (import registry part) then choose and filter the desired repository such as synBioHub.</p>
+                                <h2 class="dark-text">Importing from Repositories <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
 
-                            <div>
+                                <p>To import a registry part from an online repository, double click on a part to view
+                                    its
+                                    details, click on (import registry part) then choose and filter the desired
+                                    repository
+                                    such as synBioHub.</p>
 
-                                <img src="images/importRepo.png" width="350" height="350">
-                                  <img src="images/importReg.PNG" width="350" height="350">
-                                
+                                <div class="text-center">
+
+                                    <img src="images/importRepo.png" width="350" height="350">
+                                    <img src="images/importReg.png" width="350" height="350">
+                                </div>
                                 <p> Here is a short video on how to do that.</p>
-                                
-                                <video width="500" height="300" controls>
-                                <source src="videos/importingPartsavi.avi">
-                                </video>
-                               
+                                <div class="text-center">
+
+                                    <video width="500" height="300" controls>
+                                        <source src="videos/importingParts.mp4" type="video/mp4">
+                                    </video>
+
+                                </div>
                             </div>
                             <!-- end col -->
                         </div>
@@ -327,70 +386,70 @@
 
 
                         <hr>
-                        
+
 
                     </section>
                     <!-- end section -->
 
-                    <section id="line4" class="section">
+                    <section id="uploading-to-repo" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">Uploading to an Online Repository <a href="#top">#back to top</a>
                                     <hr>
                                 </h2>
-                            </div>
-                           
-                    
-                                <p> You can share your design by uploading it to an online repository such as synBioHub.</p>
+
+                                <p>
+                                    You can share your design by uploading it to an online repository such as synBioHub.
+                                </p>
                                 <p>First, go to File → upload → Design, as showen below </p>
-                            <div>
-                            
-                                <img src="images/uploadTo.PNG" width="400" height="500">
-                                <p> Second, choose the online repository, make sure you are logged in to synBioHub.</p>
-                                <img src= "images/uploadTo2.PNG">
-                         
-                           </div>
-                            
-                              <!-- end col -->
-                        </div>
-                        <!-- end row -->
-                        
-                         <hr>
-                        
-                    <div class="col-md-12">
-                        <p>If you need additional help, you can watch this tutorial video on how to upload to SynBioHub.</p>
-                        <div class="text-center">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Osbk5zNrJeA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                                    </iframe>                                        
+                                <div class='text-center'>
+                                    <img src="images/uploadTo.PNG" width="400" height="500">
                                 </div>
-                        </div>
-                    </div>
+                                <p> Second, choose the online repository, make sure you are logged in to synBioHub.
+                                </p>
+                                <div class="text-center">
+                                    <img src="images/uploadTo2.PNG">
+                                </div>
 
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line5" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Exporting to Other File Formats <a href="#top">#back to top</a><hr></h2>
                             </div>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
 
+                        <hr>
                         <div class="row">
-
                             <div class="col-md-12">
+                                <p>If you need additional help, you can watch this tutorial video on how to upload to
+                                    SynBioHub.</p>
+                                <div class="text-center">
+                                    <div class="media">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Osbk5zNrJeA"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="exporting-to-file" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Exporting to Other File Formats <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
+
                                 <p>iBioSim allows you to export to other file formats such as GenBank or FASTA. </p>
-                                <p> To do that, simply go to Files → export → Design, and then you can choose the desired formats.</p>
-                            </div>
+                                <p> To do that, simply go to Files → export → Design, and then you can choose the
+                                    desired formats.</p>
 
-                            <div>
-                                <img src="images/export.PNG" width="400" height="500">
+                                <div class="text-center">
+                                    <img src="images/export.PNG" width="400" height="500">
 
+                                </div>
                             </div>
 
                         </div>
@@ -398,52 +457,43 @@
 
                     </section>
                     <!-- end section -->
-                                 
-                                   <section id="line5" class="section">
+
+                    <section id="importing-from-file" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Importing from Other File Formats <a href="#top">#back to top</a><hr></h2>
-                            </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-md-12">
+                                <h2 class="dark-text">Importing from Other File Formats <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
                                 <p>iBioSim also allows you to import from other file formats saved on your computer.</p>
-                                <p> Similar to exporting process, go to Files →  import → Design/Model, then your desired format.</p>
+                                <p> Similar to exporting process, go to Files → import → Design/Model, then your desired
+                                    format.</p>
+
+                                <div class="text-center">
+                                    <img src="images/import.PNG" width="400" height="500">
+                                </div>
+
                             </div>
-
-                            <div>
-                                <img src="images/import.PNG" width="400" height="500">
-
-                            </div>
-
                         </div>
                         <!-- end row -->
 
                     </section>
                     <!-- end section -->
 
-                    <section id="line6" class="section">
+                    <section id="design-example" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Design example <a href="#top">#back to top</a><hr></h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col-md-12">
+                                <h2 class="dark-text">Design example <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
                                 <p>Here is a tutorial video on how to create an example of a full design in iBioSim.</p>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YfsUis2cV2A"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             </div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YfsUis2cV2A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
 
-                    </section> 
+                    </section>
 
                     <!-- end section -->
 
@@ -590,40 +640,52 @@
                         </div>
 
                     </section> -->
-    
+
 
                     <!-- end section -->
 
-                     <section id="line9" class="section">
-
-                       
-                                
-
-                       
-
-                    </section>
-                    <!-- end section -->
-
-                    <section id="line10" class="section">
+                    <section id="credits" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Credits<a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Credits<a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
                             </div>
                         </div>
 
                         <div class="row">
-                                <p>The iBioSim tool is being developed by Chris Myers research group at the University of Utah. This project has involved many students including Nathan Barker, Scott Glass, Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen, Nam Nguyen, Tramy Nguyen, Tyler Patterson, Nicholas Roehner, Jason Stevens, Leandro Watanabe, and Zhen Zhang.
+                            <div class="col-md-12">
+                                <p>The iBioSim tool is being developed by Chris Myers research group at the University
+                                    of
+                                    Utah. This project has involved many students including Nathan Barker, Scott Glass,
+                                    Kevin Jones, Hiroyuki Kuwahara, Curtis Madsen, Nam Nguyen, Tramy Nguyen, Tyler
+                                    Patterson, Nicholas Roehner, Jason Stevens, Leandro Watanabe, and Zhen Zhang.
                                 </p>
+                                <div class="intro1">
+                                    <div>
+                                        <p><strong>To cite iBioSim, please use the latest paper:</strong></p>
+                                        <p>Watanabe, Leandro, Tramy Nguyen, Michael Zhang, Zach Zundel, Zhen Zhang,
+                                            Curtis Madsen, Nicholas Roehner, and Chris Myers. 2018.
+                                            <a href="https://pubs.acs.org/doi/full/10.1021/acssynbio.8b00078">
+                                                "IBioSim 3: A Tool for Model-Based Genetic Circuit Design."
+                                            </a>
+                                            <i>ACS Synthetic Biology</i> 8
+                                            (7): 1560–1563. doi:10.1021/acssynbio.8b00078.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                    </section> 
+                    </section>
 
-                    <section id="line11" class="section">
+                    <section id="copyright" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Copyright and license <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Copyright and license <a href="#top">#back to top</a>
+                                    <hr>
+                                </h2>
                             </div>
                             <!-- end col -->
                         </div>
@@ -631,10 +693,14 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                
-                                <p>IBIOSIM is released under the <a href="https://github.com/SynBioDex/SBOLDesigner/blob/master/LICENSE.txt" target="_blank">Apache 2.0</a> License.</p>                        
-                                <p>For more information about the Apache license go to <a href="http://www.apache.org/licenses/" target="_blank">apache.org/licenses/</a>.</p>
-                            
+
+                                <p>IBIOSIM is released under the <a
+                                        href="https://github.com/SynBioDex/SBOLDesigner/blob/master/LICENSE.txt"
+                                        target="_blank">Apache 2.0</a> License.</p>
+                                <p>For more information about the Apache license go to <a
+                                        href="http://www.apache.org/licenses/" target="_blank">apache.org/licenses/</a>.
+                                </p>
+
                             </div>
                         </div>
                         <!-- end row -->
@@ -646,7 +712,7 @@
 
             </div>
             <!-- // end .row -->
-    
+
         </div>
         <!-- // end container -->
 
